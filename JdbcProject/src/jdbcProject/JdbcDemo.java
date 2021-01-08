@@ -1,7 +1,8 @@
 package jdbcProject;
 
 import java.sql.Connection;
-//ÆÆÏş
+//ç ´æ™“
+//hello world!
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -13,8 +14,8 @@ public class JdbcDemo {
 	private static final String user = "scott";
 	private static final String PWD = "tiger";
 		
-	public static void update() {//ÔöÉ¾¸Ä
-			//µ¼ÈëÇı¶¯
+	public static void update() {//å¢åˆ æ”¹
+			//å¯¼å…¥é©±åŠ¨
 		Connection connection = null;
 		Statement stmt = null;
 		try {
@@ -24,7 +25,7 @@ public class JdbcDemo {
 			String sql="insert into student values (2,'ls',97)";
 			int count = stmt.executeUpdate(sql);
 			if(count > 0) {
-				System.out.println("²Ù×÷³É¹¦");
+				System.out.println("æ“ä½œæˆåŠŸ");
 			}
 		}catch (ClassNotFoundException e) {
 			e.printStackTrace();
@@ -45,7 +46,7 @@ public class JdbcDemo {
 	
 	
 	public static void query() {
-		// µ¼ÈëÇı¶¯
+		// å¯¼å…¥é©±åŠ¨
 		ResultSet rs = null ;
 		Connection connection = null;
 		Statement stmt = null;
