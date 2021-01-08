@@ -13,8 +13,8 @@ public class JdbcDemo {
 	private static final String user = "scott";
 	private static final String PWD = "tiger";
 		
-	public static void update() {//å¢åˆ æ”¹
-			//å¯¼å…¥é©±åŠ¨
+	public static void update() {//ÔöÉ¾¸Ä
+			//µ¼ÈëÇı¶¯
 		Connection connection = null;
 		Statement stmt = null;
 		try {
@@ -24,7 +24,7 @@ public class JdbcDemo {
 			String sql="insert into student values (2,'ls',97)";
 			int count = stmt.executeUpdate(sql);
 			if(count > 0) {
-				System.out.println("æ“ä½œæˆåŠŸ");
+				System.out.println("²Ù×÷³É¹¦");
 			}
 		}catch (ClassNotFoundException e) {
 			e.printStackTrace();
@@ -45,7 +45,7 @@ public class JdbcDemo {
 	
 	
 	public static void query() {
-		// å¯¼å…¥é©±åŠ¨
+		// µ¼ÈëÇı¶¯
 		ResultSet rs = null ;
 		Connection connection = null;
 		Statement stmt = null;
@@ -86,4 +86,3 @@ public class JdbcDemo {
 		query();
 	}
 }
- 
