@@ -1,7 +1,6 @@
 package jdbcProject;
 
 import java.sql.Connection;
-//破晓
 //hello world!
 import java.sql.DriverManager;
 import java.sql.ResultSet;
